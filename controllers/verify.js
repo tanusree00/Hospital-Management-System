@@ -1,7 +1,7 @@
 var express = require ('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var db = require.main.require ('./models/db_controller');
+var db = require.main.require ('./db/db_controller');
 
 router.use(bodyParser.urlencoded({extended : true}));
 router.use(bodyParser.json());

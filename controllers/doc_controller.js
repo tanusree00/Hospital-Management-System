@@ -6,7 +6,7 @@ var fs = require ('fs');
 var path = require ('path');
 
 
-var db = require.main.require ('./models/db_controller');
+var db = require.main.require ('./db/db_controller');
 
 
 router.get('*', function(req, res, next){

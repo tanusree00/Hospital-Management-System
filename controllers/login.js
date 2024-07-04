@@ -4,7 +4,7 @@ var mysql =require('mysql');
 var session = require ('express-session');
 var router = express.Router();
 var bodyParser = require('body-parser');
-var db = require.main.require ('./models/db_controller');
+var db = require.main.require ('./db/db_controller');
 var  sweetalert = require('sweetalert2');
 const { check, validationResult } = require('express-validator');
 

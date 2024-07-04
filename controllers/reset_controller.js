@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
 //var crypto = require ('crypto');
 var randomToken = require ('random-token');
-var db = require.main.require ('./models/db_controller');
+var db = require.main.require ('./db/db_controller');
 
 router.get('/',function(req,res){
     res.render('resetpassword.ejs');

@@ -1,6 +1,6 @@
 var express = require ('express');
 var router = express.Router();
-var db = require.main.require ('./models/db_controller');
+var db = require.main.require ('./s/db_controller');
 var bodyPaser = require ('body-parser');
 
 router.get('*', function(req, res, next){
