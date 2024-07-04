@@ -10,10 +10,10 @@ var db = require("./db/db_controller.js");
 
 // Controler Imports
 var landing = require("./controllers/landing");
+var signup = require("./controllers/signup");
 // var complain = require("./controllers/complain");
 // var login = require("./controllers/login");
 // var home = require("./controllers/home");
-// var signup = require("./controllers/signup");
 // var doc_controller = require("./controllers/doc_controller");
 // var reset = require("./controllers/reset_controller");
 // var set = require("./controllers/set_controller");
@@ -36,9 +36,9 @@ app.use(cookie());
 //app.use(expressValidator());
 
 app.use("/", landing);
+app.use("/signup", signup);
 // app.use("/complain", complain);
 // app.use("/login", login);
-// app.use("/signup", signup);
 // app.use("/home", home);
 // app.use("/doctors", doc_controller);
 // app.use("/resetpassword", reset);
