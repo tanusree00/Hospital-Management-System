@@ -37,15 +37,7 @@ router.use(bodyParser.urlencoded({extended : true}));
 router.use(bodyParser.json());
 
 
-router.post('/',[
-    check('username').notEmpty().withMessage("Username is reequired"),
-    check('password').notEmpty().withMessage("Password is reequired")
-    
-], function(request , response){
-    const errors = validationResult(request);
-    if (!errors.isEmpty()) {
-        return response.status(422).json({ errors: errors.array() });
-      }
+router.post('/',function(request , response){
 
     var username = request.body.username;
     var password = request.body.password;
